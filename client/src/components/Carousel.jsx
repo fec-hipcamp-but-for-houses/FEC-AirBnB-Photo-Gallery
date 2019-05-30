@@ -150,8 +150,15 @@ const CurrentPhoto = styled.img`
 `;
 
 const CarouselContainer = styled.div`
-  display: flex;
-  z-index: 2;
+  background-color: #262626 !important;
+  position: fixed;
+  z-index: 2000 !important;
+  top: 0px !important;
+  right: 0px !important;
+  bottom: 0px !important;
+  left: 0px !important;
+  overflow-y: auto !important;
+  transform: translate3d(0px, 0px, 0px) !important;
 `;
 
 const CaptionDiv = styled.div`

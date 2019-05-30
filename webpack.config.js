@@ -21,4 +21,9 @@ module.exports = {
       },
     ],
   },
+  resolve: {
+    alias: {
+      'styled-components': path.resolve('node_modules', 'styled-components'),
+    },
+  },
 };
