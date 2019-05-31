@@ -1,6 +1,7 @@
 import React from 'react';
-import styled from 'styled-components';
 import ThumbnailItem from './ThumbnailItem.jsx';
+
+const styled = window.styled;
 
 
 const OuterContainer = styled.div`

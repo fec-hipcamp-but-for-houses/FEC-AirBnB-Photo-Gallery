@@ -1,11 +1,7 @@
 import React from 'react';
-import styled, { createGlobalStyle } from 'styled-components';
 
-const GlobalStyle = createGlobalStyle`
-  body {
-    margin: 0px;
-  }
-`;
+const styled = window.styled;
+
 
 const Grid = styled.div`
   display: grid;
@@ -112,7 +108,6 @@ const ImageGrid = (props) => {
   // const randomListing = Math.floor(Math.random() * 100);
   return (
     <Grid onClick={props.onClick}>
-      <GlobalStyle />
       <MainImage>
         <Img src={props.images[0].imageUrl[0]} />
       </MainImage>

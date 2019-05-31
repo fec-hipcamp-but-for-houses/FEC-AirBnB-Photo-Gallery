@@ -1,12 +1,8 @@
 import React from 'react';
-import styled, { createGlobalStyle } from 'styled-components';
 import ThumbnailSlider from './ThumbnailSlider.jsx';
 
-const GlobalStyle = createGlobalStyle`
-  body {
-    background-color: #262626;
-  }
-`;
+const styled = window.styled;
+
 
 const Button = styled.button`
   text-rendering: auto;
@@ -231,7 +227,6 @@ class Carousel extends React.Component {
     const imagesLength = images.length;
     return (
       <CarouselContainer>
-        <GlobalStyle />
         <CloseButtonDiv>
           <Button>
             <CloseSvg viewBox="0 0 24 24" role="img" aria-label="Close" focusable="false" onClick={handleClick}>
