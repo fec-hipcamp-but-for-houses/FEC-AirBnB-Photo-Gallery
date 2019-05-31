@@ -1,7 +1,8 @@
 /* eslint-disable array-callback-return */
 const mongoose = require('mongoose');
 
-mongoose.connect('mongodb://localhost/photoGalleryDB', {
+mongoose.connect('mongodb://database/photoGalleryDB', {
+  dbName: 'photoGalleryDB',
   useNewUrlParser: true,
 });
 
