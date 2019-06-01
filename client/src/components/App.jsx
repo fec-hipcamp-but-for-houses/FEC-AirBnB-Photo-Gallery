@@ -22,7 +22,7 @@ class App extends React.Component {
   }
 
   getAll() {
-    Axios.get('http://ec2-13-52-103-16.us-west-1.compute.amazonaws.com/photoGallery')
+    Axios.get('http://ec2-54-215-243-121.us-west-1.compute.amazonaws.com/photoGallery')
       .then((response) => {
         const ImgCollection = [];
         ImgCollection.push(response.data[0]);
